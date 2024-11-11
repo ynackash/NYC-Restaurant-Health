@@ -1,0 +1,148 @@
+*{font-family: "Gill Sans", sans-serif;}
+
+/*-------------------Nav Bar -------------------------*/
+#topnav {
+    background-color: rgba(72, 114, 97, 0.7);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+#topnav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+
+/* Change the color of links on hover */
+#topnav a:hover {
+    color: #2b2b2b;
+}
+  
+.topnav_home {
+    height: 40px; 
+    display: flex;
+    align-items: center; 
+    /* padding: 10px 10px; */
+    padding-left: 20px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:600;
+}
+
+.topnav_rest {
+    /* padding: 0px 10px; */
+    height: 40px; 
+    display: flex;
+    align-items: center; 
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:500;
+}
+
+/* .topnav_rest a:last-child {
+    padding: 10px 20px;
+    border: solid #ffffff;
+    border-width: 2px 2px;
+}
+
+.topnav_rest a:last-child:hover {
+    border-color: #2b2b2b;
+} */
+
+/*-------------------Landind Screen Section-------------------------*/
+.section_1 {
+    position: relative;
+    height: 100vh;
+    /* font-family: "Gill Sans", sans-serif; */
+    letter-spacing: 2px;
+}
+
+.section_1::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("nyc_image2.jpg");
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: -10px;
+}
+
+.main_title {
+    font-size: 65px;
+    line-height : normal;
+    padding: 150px 35px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*-------------------Sub Sections-------------------------*/
+.sub_section {
+    font-size: 45px;
+    line-height : normal;
+    /* padding: 150px 35px; */
+    font-weight: 600;
+    text-align: center;
+    /* color: #ffffff; */
+}
+
+.section_text {
+    font-size: 25px;
+    line-height : normal;
+    padding: 0px 40px;
+    font-weight: 300;
+    text-align: left;
+    /* color: #ffffff; */
+}
+
+/*-------------------Chart Section-------------------------*/
+.chart_section_text {
+    font-size: 30px;
+    line-height : normal;
+    padding: 0px 40px;
+    font-weight: 400;
+    text-align: center;
+    /* color: #ffffff; */
+}
+
+.my-iframe {
+    width: 80%;          /* Set the width to 100% of the container */
+    height: 800px;        /* Set a fixed height */
+    border: none;         /* Remove the border */
+    overflow: auto;       /* Enable scrolling within the iframe */
+}
+
+/*-------------------Bottom Section-------------------------*/
+.bottom_section {
+    background-color: #f1f7ff;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    /* margin: -10px; */
+    font-size: 45px;
+    line-height : normal;
+    font-weight: 600;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #000000;
+    margin-top: 50px;
+    margin-left: 200px; 
+    margin-right: 200px; 
+}
