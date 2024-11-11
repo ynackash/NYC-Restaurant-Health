@@ -110,20 +110,29 @@
 }
 
 /*-------------------Chart Section-------------------------*/
-.chart_section_text {
+.chart_section_title {
     font-size: 30px;
     line-height : normal;
     padding: 0px 40px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     /* color: #ffffff; */
 }
 
-.my-iframe {
-    width: 80%;          /* Set the width to 100% of the container */
-    height: 800px;        /* Set a fixed height */
-    border: none;         /* Remove the border */
-    overflow: auto;       /* Enable scrolling within the iframe */
+.chart_section_text {
+    font-size: 20px;
+    line-height : normal;
+    padding: 0px 40px;
+    font-weight: 300;
+    text-align: center;
+    /* color: #ffffff; */
+}
+
+.my-iframe3 {
+    width: 80%;    
+    height: 800px;     
+    border: none;         
+    overflow: auto; 
 }
 
 /*-------------------Bottom Section-------------------------*/
