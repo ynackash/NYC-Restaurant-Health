@@ -129,10 +129,10 @@
 }
 
 .my-iframe1 {
-    width: 80%;    
-    height: 800px;     
+    width: 50%;    
+    height: 450px;     
     border: none;         
-    overflow: auto;
+    overflow: hidden;
 }
 
 .my-iframe3 {
