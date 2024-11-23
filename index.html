@@ -73,16 +73,35 @@
                     <iframe src="cusine_distribution_neighborhood (5).html" width="1600" height="600"></iframe> 
                 </div>
 
-                <p>Objective 3: Understand inspection violations at the restaurant level.</p>
-                <div class="chart_section_text">
-                    <p>In the following faceted visualization, the chart on the left contains the New York City neighborhood choropleth overlaid with restaurant locations. 
-                        A color encoding is included that defines whether the restaurant has most recently been awared an inspection grade of A, B, or C. 
-                        The chart on the right is a horizontal bar graph that includes restaurant inspections, broken out by individual violation codes. 
-                        A color encoding is included to indicate the average number of points associated with that violation code, as violation codes can be awarded a range of points.</p>
-                    <iframe src="nyc_rest_inspections.html" class="my-iframe3"></iframe>
-                </div>
-            </div>
 
+                <p>Objective 3: Understand inspection violations at the restaurant level</p>
+                <!-- <div class="two-columns"> -->
+                <div class="inspection_score_explanation">
+                    <b class="custom-bold">How Inspection Scores are Calculated:</b>
+                    During an inspection, the inspector will mark down any violations found at the restaurant. 
+                    Each violations will carry a point value, and the severity of the violation will dictate what the point value is. 
+                    The worse the violation, the more points associated with it!
+                    Accumulating all violations together yields the overall inspection score, and grade. The higher the points, the worse the grade.
+                </div>
+                <div class="inspection_score_calculation">
+                    <span style="background-color: #72ee86;">A = 0 to 13 inspection points</span> 
+                    <br/>
+                    <br/>
+                    <span style="background-color: #f0841f;">B = 14 to 27 inspection points</span>
+                    <br/>
+                    <br/>
+                    <span style="background-color: #f0231f;">C = 28+ inspection points</span>
+                </div>
+                <!-- </div> -->
+                <div class="inspection_score_explanation">
+                    The chart on the left contains a New York City neighborhood choropleth overlaid with restaurant locations. 
+                    A color encoding is included that defines whether the restaurant has most recently been awared an inspection grade of A, B, or C. 
+                    The chart on the right is a horizontal bar graph that adds more detail to a selected restaurant, 
+                    showing each violation code that was identified during the inspection. <br/>
+                </div>    
+                <iframe src="nyc_rest_inspections.html" class="my-iframe3"></iframe>
+                
+            </div>
         </section>
 
         <section class="bottom_section">
