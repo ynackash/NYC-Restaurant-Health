@@ -63,15 +63,46 @@
                 
                 <p>Objective 2: Analyze Cuisine Distributions by Neighborhood and Borough</p>
                 <div class="chart_section_text">
-                    <p> Experience New York City's vibrant dining scene through our interactive map that visualizes restaurant distributions by borough and neighborhood. 
+                    <p>
+                        Experience New York City's vibrant dining scene through our interactive map that visualizes restaurant distributions by borough and neighborhood. 
                         This feature allows you to delve into specific areas of the city, comparing the density and variety of restaurants across different locales. 
                         By selecting a borough or neighborhood, you can see clusters of dining options, helping you identify popular hotspots or 
-                        discover lesser-known culinary treasures. The map is equipped with dynamic tools that let you filter restaurants based on average ratings, 
-                        inspection scores, and cuisine types. Whether you're a local looking to explore new neighborhoods or a visitor planning your culinary journey, 
-                        our interactive map provides an intuitive and engaging way to navigate the city's diverse food landscape.</p>    
-                    <iframe src="cusine_distribution_boro (2).html" width="1600" height="600"></iframe> 
-                    <iframe src="cusine_distribution_neighborhood (5).html" width="1600" height="600"></iframe> 
+                        discover lesser-known culinary treasures. Whether you're a local looking to explore new neighborhoods or a visitor planning your culinary journey, 
+                        our interactive map provides an intuitive and engaging way to navigate the city's diverse food landscape.
+                    </p>    
+                    <p>
+                        Instructions: Click on Show Borough Chart or Show Neighborhood Chart to select a view option. Click on the bars to see the corresponding resturuants on the map.
+                    </p>   
+
+                    <!-- Buttons to toggle between charts -->
+                    <div>
+                        <button onclick="showChart('boro')">Show Borough Chart</button>
+                        <button onclick="showChart('neighborhood')">Show Neighborhood Chart</button>
+                    </div>
+
+                    <!-- Iframes for the charts -->
+                    <iframe id="boro-chart" src="cusine_distribution_boro (5).html" width="1100" height="600" style="display: none;"></iframe>
+                    <iframe id="neighborhood-chart" src="cusine_distribution_neighborhood (7).html" width="1800" height="1000" style="display: none;"></iframe>
                 </div>
+
+                <script>
+                    // Function to show one chart and hide the other
+                    function showChart(chart) {
+                        const boroChart = document.getElementById('boro-chart');
+                        const neighborhoodChart = document.getElementById('neighborhood-chart');
+                            
+                        if (chart === 'boro') {
+                            boroChart.style.display = 'block';
+                            neighborhoodChart.style.display = 'none';
+                        } else if (chart === 'neighborhood') {
+                            boroChart.style.display = 'none';
+                            neighborhoodChart.style.display = 'block';
+                        }
+                    }
+
+                        // Show the first chart by default
+                    showChart('boro');
+                </script>
 
 
                 <p>Objective 3: Understand inspection violations at the restaurant level</p>
@@ -103,11 +134,29 @@
                 
             </div>
         </section>
-
         <section class="bottom_section">
             <a name="team__"></a>
-            <p>Meet the Team</p>
+            <p style="text-align: center; font-size: 48px; font-weight: bold;">Meet the Team</p>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin-top: 20px;">
+                <!-- Team Member 1 -->
+                <div style="text-align: center; flex: 1; max-width: 200px;">
+                    <img src="sam.tif" alt="Headshot of Sam" style="width: 150px; height: 150px; object-fit: cover;">
+                    <p>Sam</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div style="text-align: center; flex: 1; max-width: 200px;">
+                    <img src="kelsey.jfif" alt="Headshot of Kelsey" style="width: 150px; height: 150px; object-fit: cover;">
+                    <p>Kelsey</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div style="text-align: center; flex: 1; max-width: 200px;">
+                    <img src="yoni.tif" alt="Headshot of Yoni" style="width: 150px; height: 150px; object-fit: cover;">
+                    <p>Yoni</p>
+                </div>
+            </div>
         </section>
+        
+        
         
     </body>
 </html>
