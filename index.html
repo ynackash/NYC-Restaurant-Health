@@ -56,6 +56,12 @@
             <p>Analysis</p>
             <div class="chart_section_title">
                 <p>Objective 1: Compare restaurant information by geographic region.</p>
+                <div class="inspection_score_explanation">
+                    <b class="custom-bold">How Inspection Scores are Calculated:</b>
+                    During an inspection, the inspector will mark down any violations found at the restaurant. 
+                    Each violation will carry a point value, and the severity of the violation will dictate what the point value is. 
+                    The worse the violation, the more points associated with it! Restaurants should strive for a low inspection score. 
+                </div>
                 <div class="chart_section_text">
                     <p>Below is a dynamic view of average restaurant ratings and inspection scores by borough and neighborhood.</p>
                     <iframe src="obj1_final_vis.html" class="my-iframe1"></iframe>
@@ -107,13 +113,12 @@
 
                 <p>Objective 3: Understand inspection violations at the restaurant level.</p>
                 <!-- <div class="two-columns"> -->
+                
                 <div class="inspection_score_explanation">
-                    <b class="custom-bold">How Inspection Scores are Calculated:</b>
-                    During an inspection, the inspector will mark down any violations found at the restaurant. 
-                    Each violation will carry a point value, and the severity of the violation will dictate what the point value is. 
-                    The worse the violation, the more points associated with it!
-                    Accumulating all violations together yields the overall inspection score and corresponding grade. The higher the points, the worse the grade.
-                </div>
+                    As we learned above, more violations identified during an inspection result in a higher total inspection score. 
+                    New York City attributes a letter grade of A, B, or C based on the total number of points in the inspection score.<br/>
+                </div>   
+
                 <div class="inspection_score_calculation">
                     <span style="background-color: #72ee86;">A = 0 to 13 inspection points</span> 
                     <br/>
@@ -129,7 +134,8 @@
                     A color encoding is included that defines whether the restaurant has most recently been awarded an inspection grade of A, B, or C. 
                     The chart on the right is a horizontal bar graph that adds more detail to a selected restaurant, 
                     showing each violation code that was identified during a given inspection. <br/>
-                </div>    
+                </div>   
+            
                 <iframe src="nyc_rest_inspections.html" class="my-iframe3"></iframe>
                 
             </div>
@@ -150,7 +156,7 @@
                 </div>
                 <!-- Team Member 3 -->
                 <div style="text-align: center; flex: 1; max-width: 200px;">
-                    <img src="yoni.tif" alt="Headshot of Yoni" style="width: 150px; height: 150px; object-fit: cover;">
+                    <img src="yoni.jpg" alt="Headshot of Yoni" style="width: 150px; height: 150px; object-fit: cover;">
                     <p>Yoni</p>
                 </div>
             </div>
