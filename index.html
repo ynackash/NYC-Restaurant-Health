@@ -32,11 +32,9 @@
             <p>About Our Website</p>
             <div class="section_text">
                 <p> 
-
-                    Welcome to NYC Food & Health, your ultimate tool for exploring restaurant options through an engaging, data-driven experience. Our platform combines map-based exploration with interactive data visualizations to help you identify and compare restaurants in your current location or specific destinations for future planning. View restaurants displayed on a map, where a simple hover reveals essential details like name, rating, and cuisine type. Use toggle options to compare neighborhoods or boroughs by average rating or inspection score.
+                    Welcome to NYC Food & Health, your ultimate tool for exploring restaurant options through an engaging, data-driven experience. Our platform combines map-based exploration with interactive data visualizations to help you identify and compare restaurants in your current location or specific destinations for future planning.
                     <br/> <br/>
-                    With our interactive bar chart, you can explore the distribution of cuisines within selected areas and dive deeper by selecting bars to see restaurants within specific cuisine categories in your chosen borough or neighborhood. Clicking into a specific restaurant reveals comprehensive details, including review counts and inspection scores over time. Dive into historical inspection data to view total violations, violations per inspection, and score changes across inspections, providing insights into the consistency and quality of restaurant standards. Collectively, our visualizations are designed to empower you to make informed dining decisions with ease and confidence.
-                    
+                    You can also dive into historical inspection data to view total violations, violations per inspection, and score changes across inspections, providing insights into the consistency and quality of restaurant standards. Collectively, our visualizations are designed to empower you to make informed dining decisions with ease and confidence.
                 </p>
             </div>
             
@@ -74,7 +72,7 @@
                         This feature allows you to look into specific areas of the city, comparing the density and variety of restaurants across different locations. 
                     </p>      
                     <!-- Buttons to toggle between charts -->
-                    <div>
+                    
                         <button onclick="showChart('boro')">Show Borough Chart</button>
                         <button onclick="showChart('neighborhood')">Show Neighborhood Chart</button>
                         <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
@@ -82,25 +80,25 @@
                             <iframe id="neighborhood-chart" src="cusine_distribution_neighborhood (11).html" width="1300" height="1000" style="display: none; margin: 0 auto; border: none;"></iframe>
                         </div>
 
-                <script>
-                    // Function to show one chart and hide the other
-                    function showChart(chart) {
-                        const boroChart = document.getElementById('boro-chart');
-                        const neighborhoodChart = document.getElementById('neighborhood-chart');
-                            
-                        if (chart === 'boro') {
-                            boroChart.style.display = 'block';
-                            neighborhoodChart.style.display = 'none';
-                        } else if (chart === 'neighborhood') {
-                            boroChart.style.display = 'none';
-                            neighborhoodChart.style.display = 'block';
+                    <script>
+                        // Function to show one chart and hide the other
+                        function showChart(chart) {
+                            const boroChart = document.getElementById('boro-chart');
+                            const neighborhoodChart = document.getElementById('neighborhood-chart');
+                                
+                            if (chart === 'boro') {
+                                boroChart.style.display = 'block';
+                                neighborhoodChart.style.display = 'none';
+                            } else if (chart === 'neighborhood') {
+                                boroChart.style.display = 'none';
+                                neighborhoodChart.style.display = 'block';
+                            }
                         }
-                    }
 
-                        // Show the first chart by default
-                    showChart('boro');
-                </script>
-
+                            // Show the first chart by default
+                        showChart('boro');
+                    </script>
+                </div> 
 
                 <p>Objective 3: Understand inspection violations at the restaurant level.</p>
                 <!-- <div class="two-columns"> -->
